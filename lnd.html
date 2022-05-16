@@ -1,478 +1,244 @@
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!DOCTYPE html><head>    <meta charset=utf-8>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name=theme-color content=#ffffff>
+    <title>New Online Generator</title>
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/iDev42/sws/favicon-32x32.png"  type="image/png">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/iDev42/sws/favicon-16x16.png"  type="image/png">
+    
+    <meta name="keywords" content="">
+    
+    <meta property="og:site_name" content="New Online Generator">
+    <meta property="og:title" content="New Online Generator" />
+    <meta name="twitter:card" content="New Online Generator" />
+    <meta name="twitter:title" content="New Online Generator" />
 
-<!-- Mirrored from robux-10000rbx-r0blox.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 May 2022 18:53:24 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="description" content="Roblox Roubx" />
+    <meta property="og:description" content="Roblox Roubx" />
+    <meta name="twitter:description" content="Roblox Roubx" />
+    <meta name="description" content="Roblox Roubx">
 
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213700225-1"></script>
+    <meta property="og:type" content="website" />
+    
+    <meta property="og:image" content="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16095851751df41d07ff341720263ffbf23a4c1282.jpg" />
+	<meta name="twitter:image" content="https://d13pxqgp3ixdbh.cloudfront.net/uploads/16095851751df41d07ff341720263ffbf23a4c1282.jpg" />
+    
+    
+    
+   <style>
+   @font-face {
+            font-family: UrbanJungle;
+            src: url("https://cdn.jsdelivr.net/gh/iDev42/frf/UrbanJungle.otf") format("opentype");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            overflow: hidden;
+        }
+
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            opacity: 1;
+            transition: 1s all;
+        }
+
+        #loader-wrap {
+            width: 100vw;
+            height: 100vh;
+            background: #101823;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        #loader svg {
+            height: 50%;
+            width: 50%;
+        }
+
+        .st, .st0, .st1, .st2, .st3, .st4 {
+            fill: none;
+            stroke: white;
+            stroke-width: 1;
+            stroke-miterlimit: 10;
+        }
+        .st--transparent, .st0--transparent, .st1--transparent, .st2--transparent, .st3--transparent, .st4--transparent {
+            stroke: rgba(255, 255, 255, 0);
+        }
+        .st--xlarge, .st0--xlarge, .st1--xlarge, .st2--xlarge, .st3--xlarge, .st4--xlarge {
+            stroke-linecap: square;
+            stroke-dasharray: 2000, 513;
+            stroke-width: 4;
+        }
+        .st--large, .st0--large, .st1--large, .st2--large, .st3--large, .st4--large {
+            stroke-linecap: square;
+            stroke-dasharray: 1500, 1013;
+            stroke-width: 4;
+        }
+        .st--medium, .st0--medium, .st1--medium, .st2--medium, .st3--medium, .st4--medium {
+            stroke-linecap: square;
+            stroke-dasharray: 1000, 1513;
+            stroke-width: 4;
+        }
+        .st--small, .st0--small, .st1--small, .st2--small, .st3--small, .st4--small {
+            stroke-linecap: square;
+            stroke-dasharray: 500, 2013;
+            stroke-width: 4;
+        }
+        .st--xsmall, .st0--xsmall, .st1--xsmall, .st2--xsmall, .st3--xsmall, .st4--xsmall {
+            stroke-linecap: square;
+            stroke-dasharray: 100, 2413;
+            stroke-width: 10;
+        }
+        .st--three, .st0--three, .st1--three, .st2--three, .st3--three, .st4--three {
+            stroke-linecap: square;
+            stroke-dasharray: 320, 320;
+            stroke-width: 10;
+        }
+
+        .st0 {
+            stroke-dasharray: 12.1947, 12.1947, 12.1947, 12.1947, 12.1947, 12.1947;
+        }
+
+        .st1 {
+            stroke-dasharray: 50, 90, 200, 30, 40, 0;
+        }
+
+        .st2 {
+            stroke-linecap: square;
+            stroke-dasharray: 2000, 513;
+            stroke-width: 4;
+        }
+
+        .st3 {
+            stroke-width: 1;
+            stroke-linecap: square;
+        }
+
+        .st4 {
+            stroke-width: 1;
+            stroke-linecap: square;
+        }
+        </style>
+        
+    <link href="https://cdn.jsdelivr.net/gh/iDev42/sws/20.css" rel="preload" as="style">
+    <link href="https://cdn.jsdelivr.net/gh/iDev42/sws/20.js" rel="preload" as="script">
+    <link href="https://cdn.jsdelivr.net/gh/iDev42/sws/20.css" rel="stylesheet">
+    </head><body><noscript><strong>We're sorry but site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="loader"><div id="loader-wrap"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px"
+             viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+
+  <!-- ring 5 -->
+  <circle class="st" cx="500" cy="500" r="160"/>
+            <circle class="st st--small" cx="500" cy="500" r="160" transform="rotate(0 500 500)" ;>
+    <animateTransform attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 500 500"
+                      to="-360 500 500"
+                      dur="5s"
+                      repeatCount="indefinite"/>
+  </circle>
+
+            <!-- ring 4 -->
+            <circle class="st st--transparent" cx="500" cy="500" r="240"/>
+            <circle class="st st--medium" cx="500" cy="500" r="240" transform="rotate(0 500 500)" ;>
+    <animateTransform attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 500 500"
+                      to="-360 500 500"
+                      dur="4s"
+                      repeatCount="indefinite"/>
+  </circle>
+
+            <!-- ring 3 -->
+            <circle class="st" cx="500" cy="500" r="320"/>
+            <circle class="st st--three" cx="500" cy="500" r="320" transform="rotate(0 500 500)" ;>
+    <animateTransform attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 500 500"
+                      to="-360 500 500"
+                      dur="2s"
+                      repeatCount="indefinite"/>
+  </circle>
+
+            <!-- ring 2 -->
+            <circle class="st" cx="500" cy="500" r="400"/>
+            <circle class="st st--large" cx="500" cy="500" r="400" transform="rotate(0 500 500)" ;>
+    <animateTransform attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 500 500"
+                      to="-360 500 500"
+                      dur="5s"
+                      repeatCount="indefinite"/>
+  </circle>
+
+            <!-- ring 1 -->
+            <circle class="st" cx="500" cy="500" r="480"/>
+            <circle class="st st--xlarge" cx="500" cy="500" r="480" transform="rotate(0 500 500)" ;>
+    <animateTransform attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 500 500"
+                      to="-360 500 500"
+                      dur="5s"
+                      repeatCount="indefinite"/>
+  </circle>
+</svg></div></div><div id="app"></div>
+
+
+<script>
+    var Globals = JSON.parse(atob("eyJhdXRvX3VwZGF0ZXMiOiIxIiwiYmdfMSI6Imh0dHBzOlwvXC9kMTNweHFncDNpeGRiaC5jbG91ZGZyb250Lm5ldFwvdXBsb2Fkc1wvMTY0ODk0MDIyODZiMzUwODI4MjFjNWE1Yjc3YjZkNWQ1MDY1MjM4ZjQxLnBuZyIsImJnXzIiOiJodHRwczpcL1wvZDEzcHhxZ3AzaXhkYmguY2xvdWRmcm9udC5uZXRcL3VwbG9hZHNcLzE2MDk1ODUxNzUxZGY0MWQwN2ZmMzQxNzIwMjYzZmZiZjIzYTRjMTI4Mi5qcGciLCJkZXNjcmlwdGlvbiI6IlJvYmxveCBSb3VieCIsImVtYmVkZGVkX2xvY2tlciI6IjEiLCJmYWtlX3N1Y2Nlc3MiOiIwIiwiZm9yY2VkX2xhbmd1YWdlIjoibm9uZSIsImdvb2dsZV9hbmFseXRpY3MiOiJVQS0wMDAwMC0wIiwiaGVybyI6IjEiLCJrZXl3b3JkcyI6IiIsIm11c2ljIjoiMSIsInJlZGlyZWN0X3VybCI6Imh0dHBzOlwvXC93d3cuZ29vZ2xlLmNvbSIsInMyIjoiRGVhbGVyIiwic291bmRzIjoiMSIsInNwZWVkX2ZhY3RvciI6IjIwIiwidGl0bGUiOiJOZXcgT25saW5lIEdlbmVyYXRvciIsInRyYW5zbGF0aW9ucyI6IjEiLCJzZXR1cF9tb2RlIjoiMCIsInBsYXRmb3JtcyI6Ilczc2lhV1FpT2pFc0ltNWhiV1VpT2lKaGJtUnliMmxrSWl3aWRHbDBiR1VpT2lKQmJtUnliMmxrSWl3aWFXTnZiaUk2SW1GdVpISnZhV1FpZlN4N0ltbGtJam95TENKdVlXMWxJam9pYVc5eklpd2lkR2wwYkdVaU9pSnBUMU1pTENKcFkyOXVJam9pYVc5ekluMHNleUpwWkNJNk15d2libUZ0WlNJNkluZHBibVJ2ZDNNaUxDSjBhWFJzWlNJNklsZHBibVJ2ZDNNaUxDSnBZMjl1SWpvaWQybHVaRzkzY3lKOUxIc2lhV1FpT2pRc0ltNWhiV1VpT2lKdFlXTnZjeUlzSW5ScGRHeGxJam9pVFdGalQxTWlMQ0pwWTI5dUlqb2liV0ZqYjNNaWZWMD0iLCJyZXNvdXJjZXMiOiJleUp1WVcxbElqb2lVbTkxWW5naUxDSnBiV0ZuWlNJNkltaDBkSEJ6T2k4dmFXMW5MbWxqYjI1ek9DNWpiMjB2WTI5c2IzSXZNelEwTDNKdllteHZlQzV3Ym1jaUxDSjJZV3gxWlhNaU9sc2lPREF3SWl3aU1UY3dNQ0lzSWpRMU1EQWlMQ0kyTlRBd0lpd2lNVEF3TURBaUxDSXhOVEF3TUNKZGZRPT0iLCJtdXNpY19maWxlIjoiaHR0cHM6XC9cL2Nkbi5qc2RlbGl2ci5uZXRcL2doXC9pRGV2TW9yZVwvYXVkaW9zLTIwMjEtUTRcL3VpLXNvdW5kc1wvZnJmLm1wMyIsImNvbG9yX3ByaW1hcnkiOiIjNzEzNDkxIiwiY29sb3Jfc2Vjb25kYXJ5IjoiI2MyNmYyNyIsImNvbG9yX2FjY2VudCI6IiMwMDlkZmYiLCJjb2xvcl90ZXh0IjoiIiwicGxheWVyX2ZpZWxkIjoiVXNlcm5hbWUiLCJnZW5lcmF0b3JfaGVhZGVyIjoiRnJlZSBSb3VieCIsImdhbWVfbmFtZSI6IlJvYmxveCBSb3VieCJ9")),
+        currentLeads = 0,
+        currentCents = 0;
+</script>
+<script src="https://cdn.jsdelivr.net/gh/iDev42/sws/20.js"></script>
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-00000-0"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-213700225-1');
-</script>
+  gtag('config', "UA-00000-0");
+</script><script type="text/javascript">var CPABUILDSETTINGS={"it":2470475,"key":"71690","construct":true};</script><script src='https://db81lfl43r06.cloudfront.net/qTPkqI.js'></script><script src="https://d13pxqgp3ixdbh.cloudfront.net/uploads/assets/14859274931dd77b79350953c8e835afaced491210.js"></script><script type='text/javascript'>CPABuildCheckForLead();
 
+var leads_required = 2;
+var redirect_url=Globals.redirect_url;
 
-<script type="text/javascript">
-    var CPABUILDSETTINGS={"it":2585269,"key":"7de23"};
-</script>
-<script src="https://db81lfl43r06.cloudfront.net/dc2c519.js"></script>
-		<title>Roblox Robux</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta name="description" content="Robux • Free robux" />    
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link rel="icon" type="image/png" href="img/favicon.png" />
-		<meta name="theme-color" content="#000000">
-		<!-- Open Graph Meta Tags-->
-		<meta property="og:title" content="roblox • Get Free Robux" /> <!-- Title which is displayed when your site is shared on social networks -->
-		<meta property="og:description" content="robux . roblox" /> <!-- Website description which is displayed when your site is shared on social networks -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="www.apkbeast.online" /> <!-- Your Website URL --><!-- Twitter Meta -->
-		<!-- Icons -->
-		<link rel="stylesheet" href="css/icon-font.min.css">
-        <link rel="stylesheet" href="css/all2.css">
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700,900&amp;display=swap" rel="stylesheet">
-		<!-- CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" />  
-		<link href="css/animate.css" rel="stylesheet" />
-		<link href="css/style.css" rel="stylesheet" />
-		<link href="css/sweetalert2.css" rel="stylesheet" />
-		<script src="js/vanillatoasts.js"></script>
-		<script src="js/live.js"></script>
-		<link href="css/vanillatoasts.css" rel="stylesheet" />
-
-		<style>
-		input[type="value"]{
-			font-size: 32px;
-		}
-		input[type="text"]{
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		background: #e7e7e7;
-		border: 0;
-		border-radius: 10px;
-		color: #222222;
-		display: block;
-		outline: 0;
-		padding: 0 1em;
-		text-decoration: none;
-		width: 100%;
-		}
-		input::-moz-focus-inner {
-		border: 0;
-		padding: 0;
-		}
-		input {
-		color: #222222;
-		font-size: 30px;
-		font-weight: 600;
-		letter-spacing: 0.025em;
-		line-height: 1.65;
-		}
-		#spiner {
-			font-size: 2.6em;
-			display: block;
-			text-align: center;
-			margin: 20px auto;
-			color: #8400ff;
-		}
-		.hide {
-			display: none;
-		}
-		.swal2-popup {
-			border-radius: 30px;
-		}
-		.float{
-			position:fixed;
-			width:55px;
-			height:55px;
-			bottom:40px;
-			right:40px;
-			background-color:#8400ff;
-			color:#FFF;
-			border-radius:50px;
-			text-align:center;
-			box-shadow: 2px 2px 3px #999;
-		}
-		.float:hover {
-			color: #000;
-			background-color: #fff;
-		}
-		.my-float{
-			margin-top:19px;
-		}
-		strike {
-			color: red;
-		}
-		</style>	
-	</head>
-	<body onload="create()">	
-		<div id="bg"></div>
-		<div class="overlay-pattern"></div>
-		<div class="overlay"></div>
-		<section class="app-download-section">
-			<div class="container">
-				<div class="app-download-wrapper animated flipInX">
-					<div class="app-icon-wrapper">
-						<div class="app-icon-inner-wrapper">
-							<img src="img/favicon.png" class="app-icon-img img-fluid" />
-						</div>
-					</div>
-					<div class="app-download-content">
-						<div class="app-download-content-header">
-							<h1><span>Free Roblox Robux</span> • Get Free ROBUX + Bonus •</h1>
-							<span>No Login Required</span>
-						</div>
-						<div class="app-download-status">
-							<div class="status-row row-first animated bounceIn animation-delay-400">
-								<span class="status-label">Status:</span>
-								<span id="status" class="status-dynamic">Online</span>
-							</div>
-							<div class="status-row row-second odd animated bounceIn animation-delay-600">
-								<span class="status-label">Last Update:</span>
-								<span id="date" class="status-dynamic"></span>
-							</div>
-							<div class="status-row row-last animated bounceIn animation-delay-800">
-								<span class="status-label">Online Users:</span>
-								<span id="online-count" class="status-dynamic"></span>
-							</div>
-						</div>
-						<div id="control">
-							<div class="app-download-main animated bounceIn">
-								<p class="app-download-intro-text">Click on the button below to begin the process.</p>
-								<div class="button-wrapper">
-									<div id="b-1" onclick="nexT();playAu()" class="button animated pulse infinite"><span>Get Your ROBUX</span></div>
-								</div>
-								<div style="margin-top: 30px;">
-									<p class="app-download-intro-text">To get started, we first need to add you into the list so we can send you the account details instantly.</p>
-								</div>
-							</div>
-						</div>
-						<div id="show" class="hide">
-							<div class="app-download-main animated bounceIn">
-									<p class="app-download-intro-text">Your ROBLOX Username:</p>
-								    <form action="javascript:void(0);"name="Form">
-										<input type="text" name="usernameInput" value=""required />
-									</form>
-									<br>
-								<p class="app-download-intro-text">Choose Your Operating System:</p>
-								<div class="field-wrapper platform-field-wrapper">
-									<div id="devices">
-									<div class="row small-margin">
-										<div class="col small-padding">
-											<div onclick="playA()" class="platform-item platform-item-1">
-												<i class="fab fa-android"></i>
-												<span>Android</span>
-											</div>
-										</div>
-										<div class="col small-padding">
-											<div onclick="playA()" class="platform-item platform-item-2">
-												<i class="fab fa-apple"></i>
-												<span>iOS</span>
-											</div>
-										</div>
-									</div>
-									</div>
-								</div>						
-						<p class="app-download-intro-text">What Bonus you want :</p>
-						<div id="currency">
-								<div class="row small-margin">
-										<div class="col small-padding">
-											<div onclick="playA()" class="platform-item1 platform-item-1">
-												<img src="img/rare.png">
-												<span>RARE Skins<br></span>
-											</div>
-										</div>
-										<div class="col small-padding">
-											<div onclick="playA()" class="platform-item1 platform-item-2">
-												<img src="img/vbucks.png">
-												<span>20,000 Robux <br></span>
-											</div>
-										</div>
-										<div class="button-wrapper">
-												<div id="b-2" onclick="playAu(); nexT1()" class="button animated pulse infinite"><span class="lnr lnr-download"></span><span>Continue</span></div>
-										</div>
-								</div>
-								</div>					
-						</div>
-						</div>
-						<div id="verify" class="hide">
-								<div class="app-download-main animated bounceIn">
-									<div class="app-download-content-header">
-							        <span>FINAL STEP TO GET ROBLOX ROBUX</span></div>
-									<p>You are almost done! Click the button below to load the apps needed for the final step of GLITCHING process.</p>
-									<div id="spiner" class="fas fa-spinner fa-spin"></div>
-									<div class="app-download-content-header">
-                                    <span> Time Left : </span>
-                                    </div>
-                                    <p id="time" style=" font-weight: bold;"></p>
-									<div class="button-wrapper">
-										<button type="button" onclick="CPABuildLock()"class="button animated pulse infinite"><span class="lnr lnr-download"></span><span>Final Step</span></div></a>
-										</div>
-								</div>
-						</div>
-						</div>
-						</div>
-			</div>
-		</section>
-		<footer>
-			<div class="container">
-				<div class="footer-content">
-					<p>&copy; 2020 • Apk Beast • Free App Tweaks & Mods</p>
-				</div>
-			</div>
-		</footer>
-		<div class="X650d"></div>
-		<audio id="myAudio">
-			<source src="sounds/click.ogg" type="audio/ogg">
-			<source src="sounds/click.mp3" type="audio/mpeg">
-		</audio>
-		<audio id="myAu">
-			<source src="sounds/choose.ogg" type="audio/ogg">
-			<source src="sounds/choose.mp3" type="audio/mpeg">
-		</audio>
-		<audio id="myAA">
-			<source src="sounds/success.ogg" type="audio/ogg">
-			<source src="sounds/success.mp3" type="audio/mpeg">
-		</audio>
-		<audio id="myerror">
-			<source src="sounds/error.ogg" type="audio/ogg">
-			<source src="sounds/error.mp3" type="audio/mpeg">
-		</audio>
-
-	</body>
-	<!-- JS -->	
-	<script>
-		function random(min,max)
-			{
-				return Math.floor(Math.random()*(max-min+1)+min);
-			}
-		
-			var initial = random(300, 400);
-			var count = initial;
-		
-			setInterval(function() {
-				var variation = random(-5,5);
-		
-				count += variation
-				document.getElementById("online-count").innerHTML = count;
-		
-			}, 1000)
-		</script>
-		<script>
-			var d = new Date();
-			document.getElementById("date").innerHTML = d.toDateString();
-		</script>
-		<script>
-		var z = document.getElementById("myAA")
-        function nexT() {
-        let timerInterval
-          Swal.fire({
-            timer: 5000,
-            imageUrl: 'img/spin.gif',
-            imageAlt: 'Loading',
-			title: 'Loading',
-            showConfirmButton: false,
-            onClose: () => {
-              clearInterval(timerInterval)
-            }
-
-          }).then(function() {
-			var x = document.getElementById("control");
-			  if (x.style.display === "none") {
-				x.style.display = "block";
-			  } else {
-					x.style.display = "none";
-				}
-			z.play();
-			var element = document.getElementById("show");
-			element.classList.remove("hide");
-			Swal.fire({
-			type: 'success',
-			title: 'Your request has been added successfully',
-			showConfirmButton: false,
-			timer: 3000,
-			onClose: () => {
-              clearInterval(timerInterval)
-            }
-			})
-			})
-        }
-		function nexT1() {
-		let username = document.forms["Form"]["usernameInput"].value;
-		if (username== null || username == "") {
-      alert("Please Put Your Email adress, so we can send you account details!");
-    } else {
-		let timerInterval
-          Swal.fire({
-            timer: 5000,
-            imageUrl: 'img/spinsearch.gif',
-			imageAlt: 'Loading',
-			title: 'Looking For User',
-            showConfirmButton: false,
-            onClose: () => {
-              clearInterval(timerInterval)
-            }
-
-          }).then(function() {
-			z.play();
-			Swal.fire({
-			type: 'success',
-			title: 'User found',
-			showConfirmButton: false,
-			timer: 3000,
-			onClose: () => {
-              clearInterval(timerInterval)
-            }
-			}).then(function() {
-				Swal.fire({
-				timer: 5000,
-				imageUrl: 'img/spingenerate.gif',
-				imageAlt: 'Loading',
-				title: 'Generating',
-				showConfirmButton: false,
-				onClose: () => {
-				clearInterval(timerInterval)
-				}
-				}).then (function(){
-					z.play();
-					Swal.fire({
-					type: 'success',
-					title: 'Account Generated',
-					showConfirmButton: false,
-					timer: 3000,
-					onClose: () => {
-					clearInterval(timerInterval)
-					}
-					}).then(function() {
-						Swal.fire({
-						timer: 5000,
-						imageUrl: 'img/spinverify.gif',
-						imageAlt: 'Loading',
-						title: 'Verifying',
-						showConfirmButton: false,
-						onClose: () => {
-						clearInterval(timerInterval)
-						}
-						}).then(function() {
-							z.play();
-							Swal.fire({
-							type: 'success',
-							title: 'Account Works 100%',
-							showConfirmButton: false,
-							timer: 3000,
-							onClose: () => {
-							clearInterval(timerInterval)
-							}
-							}).then(function(){
-								var element = document.getElementById("show");
-								element.classList.add("hide");
-								var element1 = document.getElementById("verify");
-								element1.classList.remove("hide");
-							})
-						})	
-					})				
-				})
-			})
-		})
-	}
-        }
-		</script>
-      <script>
-          // Add active class to the current button (highlight it)
-          var header = document.getElementById("devices");
-          var btns = header.getElementsByClassName("platform-item");
-          for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            if (current.length > 0) { 
-              current[0].className = current[0].className.replace(" active", "");
-            }
-            this.className += " active";
-            });
-          }
-		</script>
-		<script>
-					// Add active class to the current button (highlight it)
-					var header = document.getElementById("currency");
-					var btns = header.getElementsByClassName("platform-item1");
-					for (var i = 0; i < btns.length; i++) {
-					  btns[i].addEventListener("click", function() {
-					  var current = document.getElementsByClassName("active1");
-					  if (current.length > 0) { 
-						current[0].className = current[0].className.replace(" active1", "");
-					  }
-					  this.className += " active1";
-					  });
-					}
-		</script>
-		<script>
-					// Add active class to the current button (highlight it)
-					var header = document.getElementById("test");
-					var btns = header.getElementsByClassName("platform-item2");
-					for (var i = 0; i < btns.length; i++) {
-					  btns[i].addEventListener("click", function() {
-					  var current = document.getElementsByClassName("active2");
-					  if (current.length > 0) { 
-						current[0].className = current[0].className.replace(" active2", "");
-					  }
-					  this.className += " active2";
-					  });
-					}
-		</script>
-		<script>
-			var x = document.getElementById("myAudio"); 
-			var y = document.getElementById("myAu")
-			var z = document.getElementById("myAA")
-			var b = document.getElementById("myerror")
-			function playAu() { 
-			  x.play(); 
-			}
-			function playA() {
-			  y.play();
-			}
-			function playAA() {
-			  z.play();
-			}
-			function playerror() {
-			  b.play();
-			}	 
-			</script>
-			<script>
-function startTimer(duration, display) {
-    var timer = duration, minutes, seconds;
-    setInterval(function () {
-        minutes = parseInt(timer / 60, 10);
-        seconds = parseInt(timer % 60, 10);
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + " minutes and " + seconds+ " seconds";
-
-        if (--timer < 0) {
-             display.textContent = "   Few seconds... " ;
-        }
-    }, 1000);
+var CPABuildOffersComplete = function(completions){
+    currentLeads = 0;
+    currentCents = 0;
+    
+    for (let i = 0; i<completions.length; i++){
+        currentLeads++;
+        currentCents += parseInt(completion.points);
+    }
+   
+    if(currentLeads < leads_required){
+        //Needs more leads
+        
+         }
+    else{
+        //All Requirements met!
+       
+          window.location.replace(redirect_url);
+        
+    }
 }
-
-window.onload = function () {
-    var fiveMinutes = 60 * 6,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
-</script>
-		<script src="js/jquery.min.html"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/sweetalert2.js"></script>
-
-<!-- Mirrored from robux-10000rbx-r0blox.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 May 2022 18:53:38 GMT -->
-</html>
+</script></body>
